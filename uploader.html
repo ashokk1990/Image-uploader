@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="uploader.css">
+    <script src="uploader.js"></script>
+    <title>Image Uploader</title>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="drop-area">
+        <form class="my-form">
+            <p>Image uploader to upload files when drag/drop Multiple files supported</p>
+            <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+            <label class="button" for="fileElem">Select files to upload</label>
+        </form>
+        <progress id="progress-bar" max=100 value=0></progress>
+        <div id="gallery" /></div>
+    </div>
+</body>
+</html>
